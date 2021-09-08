@@ -8,6 +8,7 @@ const typographyVariants = {
   titleXS: {
     fontSize: '64px',
     fontWeight: '500',
+    textTransform: 'uppercase',
   },
   // [subTitle]
   subTitle: {
