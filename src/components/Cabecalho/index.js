@@ -22,7 +22,7 @@ export default function Cabecalho() {
       display='flex'
       justifyContent='center'
       alignItems='center'
-      borderTop='2px solid'
+      borderTop='4px solid'
       borderColor='background.middle'
     >
       <CabecalhoWrapper>
