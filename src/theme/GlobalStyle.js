@@ -13,6 +13,14 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: ${( { theme }) => theme.fontFamilies.firaCondensed};
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
 `
 
 export default GlobalStyle

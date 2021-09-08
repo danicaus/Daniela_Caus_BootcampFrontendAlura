@@ -15,6 +15,17 @@ const typographyVariants = {
     fontSize: '48px',
     fontWeight: '300',
   },
+  //[Logo]
+  logo: {
+    fontSize: '38px',
+    fontWeight: '400',
+    textTransform: 'uppercase',
+  },
+  logoXS: {
+    fontSize: '18px',
+    fontWeight: '400',
+    textTransform: 'uppercase',
+  },
   // [navBar]
   navBar: {
     fontSize: '28px',

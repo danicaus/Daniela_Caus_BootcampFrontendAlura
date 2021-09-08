@@ -26,6 +26,20 @@ const mapTypographyVariants = {
     font-size: ${typographyVariants.subTitle.fontSize};
     font-weight: ${typographyVariants.subTitle.fontWeight};
   `,
+  logo: css`
+    ${breakpointsMedia({
+      xs: css`
+        font-size: ${typographyVariants.logoXS.fontSize};
+        font-weight: ${typographyVariants.logoXS.fontWeight};
+        text-transform: ${typographyVariants.logoXS.textTransform};
+      `,
+      md: css`
+        font-size: ${typographyVariants.logo.fontSize};
+        font-weight: ${typographyVariants.logo.fontWeight};
+        text-transform: ${typographyVariants.logo.textTransform};
+      `
+    })}
+  `,
   navBar: css`
     ${breakpointsMedia({
       xs: css`
@@ -70,6 +84,8 @@ const mapTypographyVariants = {
 }
 
 const TextBase = styled.span`
+  margin: 0;
+  padding: 0;
   ${(props) => mapTypographyVariants[props.variant]}
   color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
   ${propToStyle('textAlign')}
