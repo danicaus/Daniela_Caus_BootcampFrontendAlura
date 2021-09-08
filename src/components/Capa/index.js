@@ -16,7 +16,10 @@ export default function Capa() {
     >
       <Box
         display='block'
-        width='50%'
+        width={{
+          xs: '100%',
+          md: '50%',
+        }}
       >
         <Text
           tag='h1'
