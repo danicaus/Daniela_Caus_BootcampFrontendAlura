@@ -5,8 +5,10 @@ import get from 'lodash/get'
 const Box = styled.div`
   ${propToStyle('height')};
   ${propToStyle('width')};
+  ${propToStyle('maxWidth')};
   ${propToStyle('top')};
   ${propToStyle('left')};
+  ${propToStyle('overflow')};
   ${propToStyle('position')};
   ${propToStyle('backgroundImage')};
   ${propToStyle('backgroundPosition')};
@@ -14,6 +16,7 @@ const Box = styled.div`
   ${propToStyle('backgroundSize')};
   ${propToStyle('display')};
   ${propToStyle('flexDirection')};
+  ${propToStyle('flexWrap')};
   ${propToStyle('alignItems')};
   ${propToStyle('justifyContent')};
   ${propToStyle('borderTop')};

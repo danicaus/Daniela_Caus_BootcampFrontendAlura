@@ -10,6 +10,10 @@ export default function Card({ infoProjeto }) {
   const highlightProject = (
     <Box
     display="flex"
+    flexDirection={{
+      xs: "column",
+      md: "row"
+    }}
     border="1px solid"
     borderColor="borders.main"
   >
