@@ -1,5 +1,3 @@
-import styled from "styled-components";
-import propToStyle from "../../../theme/utils/propToStyle";
 import Box from "../../foundation/layout/Box";
 import Text from "../../foundation/Text";
 

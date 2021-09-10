@@ -8,12 +8,19 @@ export default function WrapperProjetos({children}) {
     <Box
       display="flex"
       flexWrap="wrap"
-      padding="0 45px"
+      padding={{
+        xs: "0 40px",  
+        md: "0 45px"
+      }}
+      gap={{
+        xs: "32px",
+        md: "18px 30px",
+      }}
+      margin="0 auto 50px"
       width="100%"
       maxWidth={{
-        md: "768px",
-        lg: "1160px",
-        xl: "1222px",
+        md: "685px",
+        lg: "1020px",
       }}
     >
       {children}

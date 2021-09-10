@@ -16,6 +16,14 @@ export default function Card({ infoProjeto }) {
     }}
     border="1px solid"
     borderColor="borders.main"
+    width={{
+      xs: "auto",
+      md: "100%",
+    }}
+    order={{
+      md: "0",
+      xs: "-1"
+    }}
   >
     <CardImage 
       highlight={infoProjeto.highlight} 

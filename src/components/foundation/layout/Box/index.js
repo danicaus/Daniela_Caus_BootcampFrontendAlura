@@ -19,9 +19,12 @@ const Box = styled.div`
   ${propToStyle('flexWrap')};
   ${propToStyle('alignItems')};
   ${propToStyle('justifyContent')};
+  ${propToStyle('order')};
+  ${propToStyle('gap')};
   ${propToStyle('borderTop')};
   ${propToStyle('border')};
   ${propToStyle('padding')};
+  ${propToStyle('margin')};
   background-color: ${({ theme, backgroundColor }) => get(theme, `colors.${backgroundColor}.color`)};
   border-color: ${({ theme, borderColor }) => get(theme, `colors.${borderColor}.color`)};
 `
