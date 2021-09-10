@@ -89,6 +89,8 @@ const TextBase = styled.span`
   ${(props) => mapTypographyVariants[props.variant]}
   color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
   ${propToStyle('textAlign')}
+  ${propToStyle('marginTop')}
+  ${propToStyle('marginBottom')}
 `;
 
 export default function Text({tag, variant, children, ...props}) {
