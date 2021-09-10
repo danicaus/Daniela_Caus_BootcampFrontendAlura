@@ -7,7 +7,7 @@ export default function SectionTitle(content) {
       as="h2"
       variant="sectionTitle"
       textAlign="center"
-      color="primary.main"
+      color="tertiary.main"
       marginTop={{
         xs: "32px",
         md: "64px",

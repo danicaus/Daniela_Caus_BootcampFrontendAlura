@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: ${( { theme }) => theme.fontFamilies.firaCondensed};
+    background-color: ${ ({ theme }) => theme.colors.background.main.color}
   }
 
   a {

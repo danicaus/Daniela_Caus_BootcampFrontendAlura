@@ -77,6 +77,17 @@ const mapTypographyVariants = {
         font-weight: ${typographyVariants.cardTitle.fontWeight};
       `
     })}`,
+  cardHighlight: css`
+    ${breakpointsMedia({
+      xs: css`
+        font-size: ${typographyVariants.cardHighlightXS.fontSize};
+        font-weight: ${typographyVariants.cardHighlightXS.fontWeight};
+      `,
+      md: css`
+        font-size: ${typographyVariants.cardHighlight.fontSize};
+        font-weight: ${typographyVariants.cardHighlight.fontWeight};
+      `
+    })}`,
   paragraph: css`
     font-size: ${typographyVariants.paragraph.fontSize};
     font-weight: ${typographyVariants.paragraph.fontWeight};

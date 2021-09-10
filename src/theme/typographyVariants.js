@@ -55,6 +55,15 @@ const typographyVariants = {
     fontSize: '24px',
     fontWeight: '700',
   },
+  // [cardHighlight]
+  cardHighlight: {
+    fontSize: '38px',
+    fontWeight: '300', 
+  },
+  cardHighlightXS: {
+    fontSize: '24px',
+    fontWeight: '300', 
+  },
   // [paragraph]
   paragraph: {
     fontSize: '18px',

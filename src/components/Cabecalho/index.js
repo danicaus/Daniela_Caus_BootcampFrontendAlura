@@ -23,7 +23,7 @@ export default function Cabecalho() {
       justifyContent='center'
       alignItems='center'
       borderTop='4px solid'
-      borderColor='background.middle'
+      borderColor='borders.secondary'
     >
       <CabecalhoWrapper>
         <CabecalhoWrapper.LeftSide

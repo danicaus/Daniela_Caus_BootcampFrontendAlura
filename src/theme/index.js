@@ -24,23 +24,26 @@ const colors = {
     main: {
       color: '#C8E7F0',
     },
+    secondary: {
+      color: '#3C9BB9',
+    },
+    tertiary: {
+      color: '#002D4A',
+    },
   },
   primary: {
     main: {
       color: '#002D4A',
-      contrastText: '#C8E7F0',
     },
   },
   secondary: {
     main: {
       color: '#3C9BB9',
-      contrastText: '#002D4A',
     },
   },
   tertiary: {
     main: {
       color: '#C8E7F0',
-      contrastText: '#002D4A',
     },
   },
 };
