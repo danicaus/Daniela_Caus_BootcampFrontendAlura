@@ -1,8 +1,8 @@
 import Box from "../foundation/layout/Box"
+import PropTypes from 'prop-types'
 
 
-
-export default function WrapperProjetos({children}) {
+function WrapperProjetos({ children }) {
 
   return (
     <Box
@@ -26,3 +26,9 @@ export default function WrapperProjetos({children}) {
     </Box>
   )
 }
+
+WrapperProjetos.propTypes = {
+  children: PropTypes.node,
+}
+
+export default WrapperProjetos;

@@ -1,7 +1,8 @@
 import Box from "../../foundation/layout/Box";
 import Text from "../../foundation/Text";
+import PropTypes from 'prop-types';
 
-export default function CardTitle({ title, highlight }) {
+function CardTitle({ title, highlight }) {
   const highlightProject = (
     <Box
       display="flex"
@@ -50,3 +51,10 @@ export default function CardTitle({ title, highlight }) {
     highlight ? highlightProject : normalProject
   )
 }
+
+CardTitle.propTypes = {
+  title: PropTypes.string.isRequired,
+  highlight: PropTypes.bool.isRequired,
+}
+
+export default CardTitle;

@@ -1,7 +1,8 @@
 import Box from "../../foundation/layout/Box";
 import Text from "../../foundation/Text";
+import PropTypes from 'prop-types';
 
-export default function CardText({ description }) {
+function CardText({ description }) {
   return (
     <Box
       padding="0 30px"
@@ -20,3 +21,9 @@ export default function CardText({ description }) {
     </Box>
   )
 }
+
+CardText.propTypes = {
+  description: PropTypes.string.isRequired,
+}
+
+export default CardText;

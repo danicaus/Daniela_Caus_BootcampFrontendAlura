@@ -2,10 +2,9 @@ import Box from "../foundation/layout/Box"
 import CardImage from "./CardImage"
 import CardTitle from "./CardTitle"
 import CardText from "./CardText"
+import PropTypes from 'prop-types'
 
-
-
-export default function Card({ infoProjeto }) {
+function Card({ infoProjeto }) {
   
   const highlightProject = (
     <Box
@@ -73,3 +72,15 @@ export default function Card({ infoProjeto }) {
     infoProjeto.highlight ? highlightProject : normalProject
   )
 }
+
+Card.propTypes = {
+  infoProjeto: PropTypes.shape({
+    id: PropTypes.number,
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    highlight: PropTypes.bool.isRequired,
+    description: PropTypes.string.isRequired
+  })
+}
+
+export default Card;

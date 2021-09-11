@@ -1,8 +1,9 @@
 import Box from "../../foundation/layout/Box";
 import Text from "../../foundation/Text";
+import PropTypes from 'prop-types';
 
 
-export default function CardImage({ highlight, image }) {
+function CardImage({ highlight, image }) {
 
   const hightlightProjectImage = (
     <Box
@@ -71,4 +72,11 @@ export default function CardImage({ highlight, image }) {
   return (
     highlight ? hightlightProjectImage : normalProjectImage
   )
-}
+};
+
+CardImage.propType = { 
+  highlight: PropTypes.bool.isRequired, 
+  image: PropTypes.string.isRequired,
+};
+
+export default CardImage;

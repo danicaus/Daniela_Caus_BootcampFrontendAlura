@@ -1,7 +1,7 @@
 import Text from "../foundation/Text";
+import PropTypes from 'prop-types';
 
-
-export default function SectionTitle(content) {
+function SectionTitle({ content }) {
   return (
     <Text
       as="h2"
@@ -17,7 +17,13 @@ export default function SectionTitle(content) {
         md: "85px",
       }}
     >
-      {content.content}
+      {content}
     </Text>
   )
 }
+
+SectionTitle.propTypes = {
+  content: PropTypes.string.isRequired,
+}
+
+export default SectionTitle;
