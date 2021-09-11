@@ -21,6 +21,7 @@ const Box = styled.div`
   ${propToStyle('justifyContent')};
   ${propToStyle('order')};
   ${propToStyle('gap')};
+  ${propToStyle('textAlign')};
   ${propToStyle('borderTop')};
   ${propToStyle('border')};
   ${propToStyle('padding')};

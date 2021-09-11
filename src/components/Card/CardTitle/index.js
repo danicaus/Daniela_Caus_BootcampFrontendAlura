@@ -14,6 +14,7 @@ export default function CardTitle({ title, highlight }) {
         xs: "20px 72px",  
         md: "40px 30px"
       }}
+      textAlign="center"
     >
       <Text
         as="h3"
