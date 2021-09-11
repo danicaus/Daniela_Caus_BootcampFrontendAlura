@@ -14,13 +14,12 @@ export default function WrapperProjetos({children}) {
       }}
       gap={{
         xs: "32px",
-        md: "18px 30px",
+        md: "30px 18px",
       }}
       margin="0 auto 50px"
       width="100%"
       maxWidth={{
-        md: "685px",
-        lg: "1020px",
+        md: "996px",
       }}
     >
       {children}
