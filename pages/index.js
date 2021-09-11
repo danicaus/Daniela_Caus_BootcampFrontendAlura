@@ -1,6 +1,7 @@
 import Cabecalho from '../src/components/Cabecalho'
 import Capa from '../src/components/Capa'
 import Card from '../src/components/Card'
+import Footer from '../src/components/Footer'
 import SectionTitle from '../src/components/SectionTitle'
 import WrapperProjetos from '../src/components/WrapperProjetos'
 import projetos from '../src/content/Projects'
@@ -22,6 +23,7 @@ export default function Home() {
           />)
         })}
       </WrapperProjetos>
+      <Footer />
     </>
   )
 }
