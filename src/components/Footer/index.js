@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import Box from "../foundation/layout/Box";
-import get from "lodash/get"
-
+import React from 'react';
+import styled from 'styled-components';
+import get from 'lodash/get';
+import Box from '../foundation/layout/Box';
 
 const FooterBase = styled.footer`
   width: 100%;
@@ -9,32 +9,30 @@ const FooterBase = styled.footer`
   align-items: center;
   justify-content: center;
   background-color: ${({ theme, backgroundColor }) => get(theme, `colors.${backgroundColor}.color`)};
-`
+`;
 
 export default function Footer() {
-  
   const socialNetworks = [
     {
       id: 1,
-      name: "Twitter",
-      link: "https://twitter.com/danicaus",
-      image: "./images/icon-twitter.svg"
+      name: 'Twitter',
+      link: 'https://twitter.com/danicaus',
+      image: './images/icon-twitter.svg',
     },
     {
       id: 2,
-      name: "Github",
-      link: "http://github.com/danicaus",
-      image: "./images/icon-github.svg"
+      name: 'Github',
+      link: 'http://github.com/danicaus',
+      image: './images/icon-github.svg',
     },
     {
       id: 3,
-      name: "Medium",
-      link: "/",
-      image: "./images/icon-medium.svg"
-    }
-  ]
-  
-  
+      name: 'Medium',
+      link: '/',
+      image: './images/icon-medium.svg',
+    },
+  ];
+
   return (
     <FooterBase
       backgroundColor="background.light"
@@ -46,23 +44,22 @@ export default function Footer() {
         alignItems="center"
         gap="40px"
       >
-        {socialNetworks.map(socialNetwork => {
-          return (
-            <a
-              key={socialNetwork.id}
-              href={socialNetwork.link}
-              target="_blank"
-            >
-              <img 
-                alt={socialNetwork.name}
-                src={socialNetwork.image}
-                width="32px"
-                height="32px"
-              />
-            </a>
-          )
-        })}
+        {socialNetworks.map((socialNetwork) => (
+          <a
+            key={socialNetwork.id}
+            href={socialNetwork.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              alt={socialNetwork.name}
+              src={socialNetwork.image}
+              width="32px"
+              height="32px"
+            />
+          </a>
+        ))}
       </Box>
     </FooterBase>
-  )
+  );
 }

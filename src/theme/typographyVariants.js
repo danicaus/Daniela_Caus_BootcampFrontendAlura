@@ -15,7 +15,7 @@ const typographyVariants = {
     fontSize: '48px',
     fontWeight: '300',
   },
-  //[Logo]
+  // [Logo]
   logo: {
     fontSize: '38px',
     fontWeight: '400',
@@ -58,11 +58,11 @@ const typographyVariants = {
   // [cardHighlight]
   cardHighlight: {
     fontSize: '38px',
-    fontWeight: '300', 
+    fontWeight: '300',
   },
   cardHighlightXS: {
     fontSize: '24px',
-    fontWeight: '300', 
+    fontWeight: '300',
   },
   // [paragraph]
   paragraph: {

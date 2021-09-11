@@ -1,6 +1,7 @@
-import Box from "../../foundation/layout/Box";
-import Text from "../../foundation/Text";
+import React from 'react';
 import PropTypes from 'prop-types';
+import Box from '../../foundation/layout/Box';
+import Text from '../../foundation/Text';
 
 function CardTitle({ title, highlight }) {
   const highlightProject = (
@@ -8,12 +9,12 @@ function CardTitle({ title, highlight }) {
       display="flex"
       alignItems="center"
       justifyContent={{
-        xs: "center",
-        md: "start"
+        xs: 'center',
+        md: 'start',
       }}
       padding={{
-        xs: "20px 72px",  
-        md: "40px 30px"
+        xs: '20px 72px',
+        md: '40px 30px',
       }}
       textAlign="center"
     >
@@ -25,7 +26,7 @@ function CardTitle({ title, highlight }) {
         {title}
       </Text>
     </Box>
-  )
+  );
 
   const normalProject = (
     <Box
@@ -33,8 +34,8 @@ function CardTitle({ title, highlight }) {
       alignItems="center"
       justifyContent="center"
       padding={{
-        xs: "20px 72px",  
-        md: "40px 45px"
+        xs: '20px 72px',
+        md: '40px 45px',
       }}
     >
       <Text
@@ -45,16 +46,16 @@ function CardTitle({ title, highlight }) {
         {title}
       </Text>
     </Box>
-  )
-  
+  );
+
   return (
     highlight ? highlightProject : normalProject
-  )
+  );
 }
 
 CardTitle.propTypes = {
   title: PropTypes.string.isRequired,
   highlight: PropTypes.bool.isRequired,
-}
+};
 
 export default CardTitle;

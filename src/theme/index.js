@@ -1,4 +1,4 @@
-import typographyVariants from './typographyVariants'
+import typographyVariants from './typographyVariants';
 
 const breakpoints = {
   xs: 0,
@@ -14,7 +14,7 @@ const colors = {
       color: '#C8E7F0',
     },
     middle: {
-      color: '#3C9BB9'
+      color: '#3C9BB9',
     },
     main: {
       color: '#002D4A',
@@ -51,7 +51,7 @@ const colors = {
 const fontFamilies = {
   firaCondensed: '\'Fira Sans Condensed\', sans-serif',
   firaRegular: '\'Fira Sans\', sans-serif',
-}
+};
 
 const theme = {
   colors,

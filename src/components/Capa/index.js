@@ -1,7 +1,6 @@
 import React from 'react';
-import Text from '../../components/foundation/Text';
+import Text from '../foundation/Text';
 import Box from '../foundation/layout/Box';
-
 
 export default function Capa() {
   return (
@@ -15,23 +14,23 @@ export default function Capa() {
       alignItems="center"
     >
       <Box
-        display='block'
+        display="block"
         width={{
           xs: '100%',
           md: '50%',
         }}
       >
         <Text
-          tag='h1'
-          variant='title'
+          tag="h1"
+          variant="title"
           color="tertiary.main"
           textAlign="center"
         >
           Daniela Caus
         </Text>
         <Text
-          tag='h2'
-          variant='subTitle'
+          tag="h2"
+          variant="subTitle"
           color="tertiary.main"
           textAlign="center"
         >
@@ -40,5 +39,5 @@ export default function Capa() {
       </Box>
 
     </Box>
-  )
+  );
 }

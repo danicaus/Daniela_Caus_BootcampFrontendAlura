@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
-import { normalize } from 'styled-normalize'
+import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -11,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: ${( { theme }) => theme.fontFamilies.firaCondensed};
-    background-color: ${ ({ theme }) => theme.colors.background.main.color}
+    font-family: ${({ theme }) => theme.fontFamilies.firaCondensed};
+    background-color: ${({ theme }) => theme.colors.background.main.color}
   }
 
   a {
@@ -22,6 +22,6 @@ const GlobalStyle = createGlobalStyle`
   li {
     list-style: none;
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

@@ -1,10 +1,9 @@
-import Box from "../../foundation/layout/Box";
-import Text from "../../foundation/Text";
+import React from 'react';
 import PropTypes from 'prop-types';
-
+import Box from '../../foundation/layout/Box';
+import Text from '../../foundation/Text';
 
 function CardImage({ highlight, image }) {
-
   const hightlightProjectImage = (
     <Box
       position="relative"
@@ -14,12 +13,12 @@ function CardImage({ highlight, image }) {
       backgroundPosition="center"
       backgroundSize="cover"
       width={{
-        xs: "288px",
-        md: "593px",
+        xs: '288px',
+        md: '593px',
       }}
       height={{
-        xs: "177px",
-        md: "320px"
+        xs: '177px',
+        md: '320px',
       }}
     >
       <Box
@@ -28,16 +27,16 @@ function CardImage({ highlight, image }) {
         borderColor="borders.tertiary"
         backgroundColor="background.light"
         padding={{
-          xs: "2px 30px",
-          md: "2px 40px",
+          xs: '2px 30px',
+          md: '2px 40px',
         }}
         top={{
-          xs: "5px",
-          md: "12px"
+          xs: '5px',
+          md: '12px',
         }}
         left={{
-          xs: "5px",
-          md: "12px"
+          xs: '5px',
+          md: '12px',
         }}
       >
         <Text
@@ -49,7 +48,7 @@ function CardImage({ highlight, image }) {
         </Text>
       </Box>
     </Box>
-  )
+  );
 
   const normalProjectImage = (
     <Box
@@ -61,21 +60,19 @@ function CardImage({ highlight, image }) {
       backgroundSize="cover"
       width="288px"
       height={{
-        xs: "177px",
-        md: "390px"
+        xs: '177px',
+        md: '390px',
       }}
-    >
-
-    </Box>
-  )
+    />
+  );
 
   return (
     highlight ? hightlightProjectImage : normalProjectImage
-  )
-};
+  );
+}
 
-CardImage.propType = { 
-  highlight: PropTypes.bool.isRequired, 
+CardImage.propType = {
+  highlight: PropTypes.bool.isRequired,
   image: PropTypes.string.isRequired,
 };
 

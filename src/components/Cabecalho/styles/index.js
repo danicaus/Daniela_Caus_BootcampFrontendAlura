@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
-import get from 'lodash/get'
+import get from 'lodash/get';
 import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
-import propToStyle from '../../../theme/utils/propToStyle';
 
 const CabecalhoWrapper = styled.nav`
   display: flex;
@@ -21,10 +20,9 @@ const CabecalhoWrapper = styled.nav`
     `,
     xl: css`
       max-width: 1222px;
-    `
+    `,
   })}
 `;
-
 
 CabecalhoWrapper.LeftSide = styled.div`
   background-color: ${({ theme, backgroundColor }) => get(theme, `colors.${backgroundColor}.color`)};
@@ -44,7 +42,6 @@ CabecalhoWrapper.LeftSide = styled.div`
   })}
 `;
 
-
 CabecalhoWrapper.RightSide = styled.div`
   display: flex;
   align-items: center;
@@ -53,7 +50,7 @@ CabecalhoWrapper.RightSide = styled.div`
   ${breakpointsMedia({
     md: css`
       gap: 38px;
-    `
+    `,
   })}
 `;
 

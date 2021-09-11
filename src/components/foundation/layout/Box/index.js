@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import propToStyle from '../../../../theme/utils/propToStyle'
-import get from 'lodash/get'
+import get from 'lodash/get';
+import propToStyle from '../../../../theme/utils/propToStyle';
 
 const Box = styled.div`
   ${propToStyle('height')};
@@ -28,6 +28,6 @@ const Box = styled.div`
   ${propToStyle('margin')};
   background-color: ${({ theme, backgroundColor }) => get(theme, `colors.${backgroundColor}.color`)};
   border-color: ${({ theme, borderColor }) => get(theme, `colors.${borderColor}.color`)};
-`
+`;
 
 export default Box;

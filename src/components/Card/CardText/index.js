@@ -1,14 +1,15 @@
-import Box from "../../foundation/layout/Box";
-import Text from "../../foundation/Text";
+import React from 'react';
 import PropTypes from 'prop-types';
+import Box from '../../foundation/layout/Box';
+import Text from '../../foundation/Text';
 
 function CardText({ description }) {
   return (
     <Box
       padding="0 30px"
       display={{
-        xs: "none",
-        md: "block"
+        xs: 'none',
+        md: 'block',
       }}
     >
       <Text
@@ -19,11 +20,11 @@ function CardText({ description }) {
         {description}
       </Text>
     </Box>
-  )
+  );
 }
 
 CardText.propTypes = {
   description: PropTypes.string.isRequired,
-}
+};
 
 export default CardText;
