@@ -69,6 +69,14 @@ const typographyVariants = {
     fontSize: '18px',
     fontWeight: '400',
   },
+  getInTouchTitle: {
+    fontSize: '36px',
+    fontWeight: '400',
+  },
+  getInTouchTitleXS: {
+    fontSize: '32px',
+    fontWeight: '400',
+  },
 };
 
 export default typographyVariants;
