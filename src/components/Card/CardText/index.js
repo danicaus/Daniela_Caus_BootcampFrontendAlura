@@ -16,6 +16,7 @@ function CardText({ description }) {
         as="p"
         variant="paragraph"
         color="tertiary.main"
+        font="firaRegular"
       >
         {description}
       </Text>
