@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Cabecalho from '../src/components/Cabecalho';
 import Capa from '../src/components/Capa';
 import Card from '../src/components/Card';
@@ -9,8 +9,12 @@ import WrapperProjetos from '../src/components/WrapperProjetos';
 import projetos from '../src/content/Projects';
 import Text from '../src/components/foundation/Text';
 import Box from '../src/components/foundation/layout/Box';
+import ContactFormWrapper from '../src/components/ContactForm';
+import Modal from '../src/components/Modal';
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <Capa />
@@ -40,8 +44,33 @@ export default function Home() {
         >
           Entre em contato
         </Text>
-        <Button content="+" />
+        <Button
+          onClick={() => {
+            setIsModalOpen(!isModalOpen);
+          }}
+        >
+          <Text
+            tag="p"
+            variant="cardTitle"
+            color="tertiary.main"
+            font="firaRegular"
+          >
+            +
+          </Text>
+        </Button>
       </Box>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => {
+          setIsModalOpen(false);
+        }}
+      >
+        {(propsDoModal) => (
+          <ContactFormWrapper
+            propsDoModal={propsDoModal}
+          />
+        )}
+      </Modal>
       <Footer />
     </>
   );
