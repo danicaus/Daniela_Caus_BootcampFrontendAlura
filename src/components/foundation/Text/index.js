@@ -90,6 +90,18 @@ const mapTypographyVariants = {
     font-size: ${({ theme }) => theme.typographyVariants.paragraph.fontSize};
     font-weight: ${({ theme }) => theme.typographyVariants.paragraph.fontWeight};
   `,
+  getInTouchTitle: css`
+  ${breakpointsMedia({
+    xs: css`
+      font-size: ${({ theme }) => theme.typographyVariants.getInTouchTitleXS.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.getInTouchTitleXS.fontWeight};
+    `,
+    md: css`
+      font-size: ${({ theme }) => theme.typographyVariants.getInTouchTitle.fontSize};
+      font-weight: ${({ theme }) => theme.typographyVariants.getInTouchTitle.fontWeight};
+    `,
+  })}
+  `,
 };
 
 const TextBase = styled.span`
@@ -97,18 +109,20 @@ const TextBase = styled.span`
   padding: 0;
   ${({ variant }) => mapTypographyVariants[variant]}
   color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
+  font-family: ${({ theme, font }) => get(theme, `fontFamilies.${font}`)};
   ${propToStyle('textAlign')}
   ${propToStyle('marginTop')}
   ${propToStyle('marginBottom')}
 `;
 
 function Text({
-  tag, variant, children, ...props
+  tag, variant, font, children, ...props
 }) {
   return (
     <TextBase
       as={tag}
       variant={variant}
+      font={font}
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
     >
@@ -120,12 +134,14 @@ function Text({
 Text.propTypes = {
   tag: PropTypes.string,
   variant: PropTypes.string,
+  font: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 Text.defaultProps = {
   tag: 'span',
   variant: 'cardTitle',
+  font: 'firaCondensed',
 };
 
 export default Text;

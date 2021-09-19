@@ -1,0 +1,49 @@
+import React from 'react';
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
+import breakpointsMedia from '../../../../theme/utils/breakpointsMedia';
+import Text from '../../Text';
+
+const MainButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  width: 46px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid ${({ theme }) => theme.colors.borders.secondary.color};
+  border-radius: 50%;
+  cursor: pointer; 
+  ${breakpointsMedia({
+    xs: css`
+      margin-top: 12px;
+    `,
+    md: css`
+      margin-top: 8px;
+    `,
+  })};
+
+  &:hover {
+    filter: brightness(1.4);
+  };
+`;
+
+export default function Button({ content }) {
+  return (
+    <MainButton type="button">
+      <Text
+        tag="p"
+        variant="cardTitle"
+        color="tertiary.main"
+        font="firaRegular"
+      >
+        {content}
+      </Text>
+    </MainButton>
+  );
+}
+
+Button.propTypes = {
+  content: PropTypes.string.isRequired,
+};
