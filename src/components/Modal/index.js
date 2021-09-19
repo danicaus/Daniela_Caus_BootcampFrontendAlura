@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import styled, { css } from 'styled-components';
-import Box from '../foundation/layout/Box';
 
 const ModalWrapper = styled.div`
   position: fixed;
