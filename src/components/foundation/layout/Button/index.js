@@ -1,10 +1,7 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
 import breakpointsMedia from '../../../../theme/utils/breakpointsMedia';
-import Text from '../../Text';
 
-const MainButton = styled.button`
+const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,21 +26,4 @@ const MainButton = styled.button`
   };
 `;
 
-export default function Button({ content }) {
-  return (
-    <MainButton type="button">
-      <Text
-        tag="p"
-        variant="cardTitle"
-        color="tertiary.main"
-        font="firaRegular"
-      >
-        {content}
-      </Text>
-    </MainButton>
-  );
-}
-
-Button.propTypes = {
-  content: PropTypes.string.isRequired,
-};
+export default Button;

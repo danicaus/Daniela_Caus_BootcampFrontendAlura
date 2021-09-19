@@ -24,6 +24,8 @@ const Box = styled.div`
   ${propToStyle('textAlign')};
   ${propToStyle('borderTop')};
   ${propToStyle('border')};
+  ${propToStyle('borderRadius')};
+  ${propToStyle('boxShadow')};
   ${propToStyle('padding')};
   ${propToStyle('margin')};
   background-color: ${({ theme, backgroundColor }) => get(theme, `colors.${backgroundColor}.color`)};
