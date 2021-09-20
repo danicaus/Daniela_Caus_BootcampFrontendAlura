@@ -9,6 +9,7 @@ const Box = styled.div`
   ${propToStyle('top')};
   ${propToStyle('left')};
   ${propToStyle('overflow')};
+  ${propToStyle('opacity')};
   ${propToStyle('position')};
   ${propToStyle('backgroundImage')};
   ${propToStyle('backgroundPosition')};

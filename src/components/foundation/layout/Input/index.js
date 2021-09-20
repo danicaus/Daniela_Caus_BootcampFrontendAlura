@@ -23,7 +23,7 @@ export default function TextField({
   name,
   onChange,
   value,
-  props,
+  ...inputProps
 }) {
   return (
     <Box
@@ -46,9 +46,9 @@ export default function TextField({
         onChange={onChange}
         value={value}
         height={tag === 'textarea' ? '120px' : '48px'}
-        required="true"
+        required
         // eslint-disable-next-line react/jsx-props-no-spreading
-        {...props}
+        {...inputProps}
       />
     </Box>
   );
@@ -62,5 +62,5 @@ TextField.propTypes = {
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
-  props: PropTypes.string.isRequired,
+  inputProps: PropTypes.string.isRequired,
 };

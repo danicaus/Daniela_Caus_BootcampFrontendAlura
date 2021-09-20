@@ -20,6 +20,10 @@ const Button = styled.button`
   &:hover {
     filter: brightness(1.4);
   };
+
+  &:disabled {
+    cursor: default;
+  }
 `;
 
 export default Button;
