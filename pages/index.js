@@ -45,6 +45,10 @@ export default function Home() {
           Entre em contato
         </Text>
         <Button
+          margin={{
+            xs: '12px 0 0 0',
+            md: '8px 0 0 0',
+          }}
           onClick={() => {
             setIsModalOpen(!isModalOpen);
           }}
@@ -68,6 +72,9 @@ export default function Home() {
         {(propsDoModal) => (
           <ContactFormWrapper
             propsDoModal={propsDoModal}
+            onClose={() => {
+              setIsModalOpen(false);
+            }}
           />
         )}
       </Modal>

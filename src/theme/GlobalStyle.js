@@ -11,8 +11,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    /* font-family: ${({ theme }) => theme.fontFamilies.firaCondensed}; */
     background-color: ${({ theme }) => theme.colors.background.main.color}
+  }
+
+  input, textarea {
+    font-family: ${({ theme }) => theme.fontFamilies.firaCondensed};
   }
 
   a {

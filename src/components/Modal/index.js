@@ -52,6 +52,9 @@ export default function Modal({ isOpen, onClose, children }) {
         style={{
           display: 'flex',
           alignItems: 'flex-end',
+          justifyContent: 'center',
+          width: '100%',
+          padding: '0 8px',
         }}
       >
         {children({
