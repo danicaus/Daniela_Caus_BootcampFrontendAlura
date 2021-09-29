@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import get from 'lodash/get';
-import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
+import breakpointsMedia from '../../../../theme/utils/breakpointsMedia';
 
 const CabecalhoWrapper = styled.nav`
   display: flex;

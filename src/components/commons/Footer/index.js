@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import get from 'lodash/get';
-import Box from '../foundation/layout/Box';
+import Box from '../../foundation/layout/Box';
 
 const FooterBase = styled.footer`
   width: 100%;

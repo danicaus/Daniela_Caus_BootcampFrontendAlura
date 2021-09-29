@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Box from '../../foundation/layout/Box';
-import Text from '../../foundation/Text';
+import Box from '../../../foundation/layout/Box';
+import Text from '../../../foundation/Text';
 
 function CardImage({ highlight, image }) {
   const hightlightProjectImage = (

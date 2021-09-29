@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Lottie } from '@crello/react-lottie';
-import Box from '../foundation/layout/Box';
-import Text from '../foundation/Text';
-import Button from '../foundation/layout/Button';
-import TextField from '../foundation/layout/Input';
+import Box from '../../foundation/layout/Box';
+import Text from '../../foundation/Text';
+import Button from '../../foundation/layout/Button';
+import TextField from '../../foundation/layout/Input';
 import errorAnimation from './animations/error.json';
 import successAnimation from './animations/success.json';
 

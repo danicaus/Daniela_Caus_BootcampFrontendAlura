@@ -1,6 +1,6 @@
 import React from 'react';
-import Box from '../foundation/layout/Box';
-import Text from '../foundation/Text';
+import Box from '../../foundation/layout/Box';
+import Text from '../../foundation/Text';
 import CabecalhoWrapper from './styles';
 
 export default function Cabecalho() {
