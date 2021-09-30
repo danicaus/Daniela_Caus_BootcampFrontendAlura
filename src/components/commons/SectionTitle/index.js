@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Text from '../foundation/Text';
+import Text from '../../foundation/Text';
 
 function SectionTitle({ content }) {
   return (

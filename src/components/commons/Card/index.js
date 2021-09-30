@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Box from '../foundation/layout/Box';
+import Box from '../../foundation/layout/Box';
 import CardImage from './CardImage';
 import CardTitle from './CardTitle';
 import CardText from './CardText';

@@ -1,6 +1,6 @@
 import React from 'react';
-import Text from '../foundation/Text';
-import Box from '../foundation/layout/Box';
+import Text from '../../foundation/Text';
+import Box from '../../foundation/layout/Box';
 
 export default function Capa() {
   return (
