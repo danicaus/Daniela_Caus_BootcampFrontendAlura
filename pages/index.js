@@ -11,6 +11,7 @@ import Text from '../src/components/foundation/Text';
 import Box from '../src/components/foundation/layout/Box';
 import ContactFormWrapper from '../src/components/commons/ContactForm';
 import Modal from '../src/components/commons/Modal';
+import Link from '../src/components/commons/Link';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,10 +25,12 @@ export default function Home() {
       />
       <WrapperProjetos>
         {projetos.map((projeto) => (
-          <Card
-            key={projeto.id}
-            infoProjeto={projeto}
-          />
+          <Link href={`/project/${projeto.slug}`}>
+            <Card
+              key={projeto.id}
+              infoProjeto={projeto}
+            />
+          </Link>
         ))}
       </WrapperProjetos>
       <Box
