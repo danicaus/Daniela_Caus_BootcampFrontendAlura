@@ -8,6 +8,9 @@ const Box = styled.div`
   ${propToStyle('maxWidth')};
   ${propToStyle('top')};
   ${propToStyle('left')};
+  ${propToStyle('right')};
+  ${propToStyle('bottom')};
+  ${propToStyle('zIndex')};
   ${propToStyle('overflow')};
   ${propToStyle('opacity')};
   ${propToStyle('position')};
