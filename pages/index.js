@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import Cabecalho from '../src/components/Cabecalho';
-import Capa from '../src/components/Capa';
-import Card from '../src/components/Card';
+import Cabecalho from '../src/components/commons/Cabecalho';
+import Capa from '../src/components/commons/Capa';
+import Card from '../src/components/commons/Card';
 import Button from '../src/components/foundation/layout/Button';
-import Footer from '../src/components/Footer';
-import SectionTitle from '../src/components/SectionTitle';
-import WrapperProjetos from '../src/components/WrapperProjetos';
+import Footer from '../src/components/commons/Footer';
+import SectionTitle from '../src/components/commons/SectionTitle';
+import WrapperProjetos from '../src/components/wrappers/WrapperProjetos';
 import projetos from '../src/content/Projects';
 import Text from '../src/components/foundation/Text';
 import Box from '../src/components/foundation/layout/Box';
-import ContactFormWrapper from '../src/components/ContactForm';
-import Modal from '../src/components/Modal';
+import ContactFormWrapper from '../src/components/commons/ContactForm';
+import Modal from '../src/components/commons/Modal';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
