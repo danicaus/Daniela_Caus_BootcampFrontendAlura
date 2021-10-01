@@ -32,11 +32,11 @@ CabecalhoWrapper.LeftSide = styled.div`
   padding: 11px;
   ${breakpointsMedia({
     xs: css`
-      width: 83px;
+      width: auto;
       height: 40px;
       `,
     md: css`
-      width: 136px;
+      width: auto;
       height: 67px;
     `,
   })}
