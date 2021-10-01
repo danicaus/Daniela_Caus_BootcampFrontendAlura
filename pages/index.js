@@ -19,7 +19,11 @@ export default function Home() {
   return (
     <>
       <Capa />
-      <Cabecalho />
+      <Cabecalho
+        openModal={() => {
+          setIsModalOpen(true);
+        }}
+      />
       <SectionTitle
         content="Meus Projetos"
       />

@@ -1,20 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Box from '../../foundation/layout/Box';
 import Text from '../../foundation/Text';
 import CabecalhoWrapper from './styles';
 
-export default function Cabecalho() {
-  const links = [
-    {
-      text: 'Sobre mim',
-      url: '/about-me',
-    },
-    {
-      text: 'Contato',
-      url: '/contact',
-    },
-  ];
-
+export default function Cabecalho({ openModal }) {
   return (
     <Box
       width="100%"
@@ -35,24 +25,36 @@ export default function Cabecalho() {
             href="/"
             color="primary.main"
           >
-            &lt;me/&gt;
+            &lt;danicaus/&gt;
           </Text>
         </CabecalhoWrapper.LeftSide>
         <CabecalhoWrapper.RightSide>
-          {links.map((link) => (
-            <li key={link.url}>
-              <Text
-                variant="navBar"
-                tag="a"
-                href={link.url}
-                color="primary.main"
-              >
-                {link.text}
-              </Text>
-            </li>
-          ))}
+          <li>
+            <Text
+              variant="navBar"
+              tag="a"
+              href="/about-me"
+              color="primary.main"
+            >
+              Sobre mim
+            </Text>
+          </li>
+          <li>
+            <Text
+              variant="navBar"
+              tag="button"
+              onClick={openModal}
+              color="primary.main"
+            >
+              Contato
+            </Text>
+          </li>
         </CabecalhoWrapper.RightSide>
       </CabecalhoWrapper>
     </Box>
   );
 }
+
+Cabecalho.propTypes = {
+  openModal: PropTypes.func.isRequired,
+};

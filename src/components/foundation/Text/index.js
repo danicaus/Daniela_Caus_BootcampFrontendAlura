@@ -107,6 +107,8 @@ const mapTypographyVariants = {
 const TextBase = styled.span`
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  border: none;
   ${({ variant }) => mapTypographyVariants[variant]}
   color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
   font-family: ${({ theme, font }) => get(theme, `fontFamilies.${font}`)};
