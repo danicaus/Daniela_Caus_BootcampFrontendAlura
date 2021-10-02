@@ -2,6 +2,8 @@ const projetos = [
   {
     id: 1,
     image: 'url(./images/project-example-1.png)',
+    imageNext: '/images/project-example-1.png',
+    url: 'https://instalura-danicaus.vercel.app/',
     title: 'Projeto um',
     slug: 'projeto-um',
     highlight: false,
@@ -10,6 +12,8 @@ const projetos = [
   {
     id: 2,
     image: 'url(./images/project-example-2.png)',
+    imageNext: '/images/project-example-2.png',
+    url: 'https://instalura-danicaus.vercel.app/',
     title: 'Projeto dois',
     slug: 'projeto-dois',
     highlight: false,
@@ -18,6 +22,8 @@ const projetos = [
   {
     id: 3,
     image: 'url(./images/project-example-1.png)',
+    imageNext: '/images/project-example-1.png',
+    url: 'https://instalura-danicaus.vercel.app/',
     title: 'Projeto três',
     slug: 'projeto-tres',
     highlight: false,
@@ -26,6 +32,8 @@ const projetos = [
   {
     id: 4,
     image: 'url(./images/project-example-2.png)',
+    imageNext: '/images/project-example-2.png',
+    url: 'https://instalura-danicaus.vercel.app/',
     title: 'Projeto quatro',
     slug: 'projeto-quatro',
     highlight: true,
