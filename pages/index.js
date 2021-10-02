@@ -1,4 +1,4 @@
-import HomeScreen from '../src/components/wrappers/HomeScreen';
+import HomeScreen from '../src/components/screens/HomeScreen';
 import websitePageHOC from '../src/components/wrappers/WebSitePage/hoc';
 
 export default websitePageHOC(HomeScreen, {
