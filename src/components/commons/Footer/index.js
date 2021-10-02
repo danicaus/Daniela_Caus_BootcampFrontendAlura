@@ -1,7 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 import get from 'lodash/get';
 import Box from '../../foundation/layout/Box';
+import Link from '../Link';
 
 const FooterBase = styled.footer`
   width: 100%;
@@ -17,19 +19,13 @@ export default function Footer() {
       id: 1,
       name: 'Twitter',
       link: 'https://twitter.com/danicaus',
-      image: './images/icon-twitter.svg',
+      image: '/images/icon-twitter.svg',
     },
     {
       id: 2,
       name: 'Github',
       link: 'http://github.com/danicaus',
-      image: './images/icon-github.svg',
-    },
-    {
-      id: 3,
-      name: 'Medium',
-      link: '/',
-      image: './images/icon-medium.svg',
+      image: '/images/icon-github.svg',
     },
   ];
 
@@ -45,19 +41,19 @@ export default function Footer() {
         gap="40px"
       >
         {socialNetworks.map((socialNetwork) => (
-          <a
+          <Link
             key={socialNetwork.id}
             href={socialNetwork.link}
             target="_blank"
             rel="noreferrer"
           >
-            <img
+            <Image
               alt={socialNetwork.name}
               src={socialNetwork.image}
               width="32px"
               height="32px"
             />
-          </a>
+          </Link>
         ))}
       </Box>
     </FooterBase>

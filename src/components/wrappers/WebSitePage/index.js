@@ -31,7 +31,7 @@ export default function WebsitePageWrapper({
         display="flex"
         flex="1"
         flexDirection="column"
-        justifyContent="space-between"
+        minHeight="100vh"
         {...boxProps}
       >
         {capaProps.display && <Capa title={capaProps.title} subtitle={capaProps.subtitle} />}

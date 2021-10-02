@@ -6,8 +6,8 @@ import SectionTitle from '../../commons/SectionTitle';
 import Box from '../../foundation/layout/Box';
 import Button from '../../foundation/layout/Button';
 import Text from '../../foundation/Text';
-import { WebsitePageContext } from '../WebSitePage';
-import WrapperProjetos from '../WrapperProjetos';
+import { WebsitePageContext } from '../../wrappers/WebSitePage';
+import WrapperProjetos from '../../wrappers/WrapperProjetos';
 
 export default function HomeScreen() {
   const toggleModal = useContext(WebsitePageContext);
