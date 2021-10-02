@@ -116,6 +116,7 @@ const TextBase = styled.span`
   ${propToStyle('marginTop')}
   ${propToStyle('marginBottom')}
   ${propToStyle('transform')};
+  ${propToStyle('fontWeight')};
 `;
 
 function Text({

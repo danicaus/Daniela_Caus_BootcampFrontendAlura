@@ -6,6 +6,7 @@ const Box = styled.div`
   ${propToStyle('height')};
   ${propToStyle('width')};
   ${propToStyle('maxWidth')};
+  ${propToStyle('minHeight')};
   ${propToStyle('top')};
   ${propToStyle('left')};
   ${propToStyle('right')};
@@ -21,6 +22,7 @@ const Box = styled.div`
   ${propToStyle('display')};
   ${propToStyle('flexDirection')};
   ${propToStyle('flexWrap')};
+  ${propToStyle('flex')};
   ${propToStyle('alignItems')};
   ${propToStyle('justifyContent')};
   ${propToStyle('order')};
