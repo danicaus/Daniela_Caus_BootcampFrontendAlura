@@ -9,7 +9,13 @@ function AboutMe({ aluraRepos }) {
   );
 }
 
-export default websitePageHOC(AboutMe);
+export default websitePageHOC(AboutMe, {
+  pageWrapperProps: {
+    SEOProps: {
+      headTitle: 'Sobre mim',
+    },
+  },
+});
 
 export async function getStaticProps() {
   const myRepos = await fetch('https://api.github.com/users/danicaus/repos')

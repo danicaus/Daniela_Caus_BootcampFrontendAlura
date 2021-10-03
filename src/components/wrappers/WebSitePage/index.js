@@ -7,6 +7,7 @@ import Footer from '../../commons/Footer';
 import Modal from '../../commons/Modal';
 import Box from '../../foundation/layout/Box';
 import Capa from '../../commons/Capa';
+import SEO from '../../commons/SEO';
 
 export const WebsitePageContext = createContext({
   toggleModalContato: () => {},
@@ -16,6 +17,7 @@ export default function WebsitePageWrapper({
   children,
   boxProps,
   capaProps,
+  SEOProps,
 }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -27,6 +29,9 @@ export default function WebsitePageWrapper({
         },
       }}
     >
+      <SEO
+        headTitle={SEOProps.headTitle}
+      />
       <Box
         display="flex"
         flex="1"
@@ -72,6 +77,9 @@ WebsitePageWrapper.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
   }),
+  SEOProps: PropTypes.shape({
+    headTitle: PropTypes.string,
+  }),
 };
 
 WebsitePageWrapper.defaultProps = {
@@ -80,5 +88,8 @@ WebsitePageWrapper.defaultProps = {
   },
   capaProps: {
     display: false,
+  },
+  SEOProps: {
+    headTitle: '',
   },
 };
