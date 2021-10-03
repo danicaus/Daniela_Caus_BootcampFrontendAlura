@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import projetos from '../../../content/Projects';
+import db from '../../../../db.json';
 import Card from '../../commons/Card';
 import Link from '../../commons/Link';
 import SectionTitle from '../../commons/SectionTitle';
@@ -18,10 +18,9 @@ export default function HomeScreen() {
         content="Meus Projetos"
       />
       <WrapperProjetos>
-        {projetos.map((projeto) => (
-          <Link href={`/project/${projeto.slug}`}>
+        {db.projetos.map((projeto) => (
+          <Link key={projeto.id} href={`/project/${projeto.slug}`}>
             <Card
-              key={projeto.id}
               infoProjeto={projeto}
             />
           </Link>

@@ -6,7 +6,7 @@ import me from '../../../../public/images/me.png';
 import Box from '../../foundation/layout/Box';
 import Button from '../../foundation/layout/Button';
 import Text from '../../foundation/Text';
-import profileDescription from '../../../content/Profile';
+import db from '../../../../db.json';
 
 export default function AboutMeScreen({ aluraRepos }) {
   const regex = /[-_]/g;
@@ -80,7 +80,7 @@ export default function AboutMeScreen({ aluraRepos }) {
           md: '0',
         }}
       >
-        {profileDescription.map((paragraph) => (
+        {db.profileDescription.map((paragraph) => (
           <Text
             key={paragraph.key}
             variant="paragraph"
