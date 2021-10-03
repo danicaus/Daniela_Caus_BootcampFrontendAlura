@@ -144,7 +144,7 @@ export default function AboutMeScreen({ aluraRepos }) {
 }
 
 AboutMeScreen.propTypes = {
-  aluraRepos: PropTypes.shape({
+  aluraRepos: PropTypes.arrayOf({
     id: PropTypes.number,
     name: PropTypes.string,
     html_url: PropTypes.string,
