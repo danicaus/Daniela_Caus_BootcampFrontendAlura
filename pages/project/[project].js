@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ProjectScreen from '../../src/components/screens/ProjectScreen';
 import websitePageHOC from '../../src/components/wrappers/WebSitePage/hoc';
-import projetos from '../../src/content/Projects';
+import db from '../../db.json';
 
 function ProjectPage({ project }) {
   return (
@@ -13,7 +13,7 @@ function ProjectPage({ project }) {
 export default websitePageHOC(ProjectPage);
 
 export function getStaticProps({ params }) {
-  const projectContent = projetos.find((projeto) => {
+  const projectContent = db.projetos.find((projeto) => {
     if (projeto.slug === params.project) {
       return true;
     }
@@ -28,7 +28,7 @@ export function getStaticProps({ params }) {
 }
 
 export function getStaticPaths() {
-  const paths = projetos.map((projeto) => (
+  const paths = db.projetos.map((projeto) => (
     { params: { project: projeto.slug } }
   ));
 
