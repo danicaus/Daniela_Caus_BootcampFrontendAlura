@@ -6,5 +6,8 @@ export default websitePageHOC(ErrorScreen, {
     boxProps: {
       height: '100vh',
     },
+    SEOProps: {
+      headTitle: 'Página não encontrada',
+    },
   },
 });

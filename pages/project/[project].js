@@ -23,6 +23,11 @@ export function getStaticProps({ params }) {
   return {
     props: {
       project: projectContent,
+      pageWrapperProps: {
+        SEOProps: {
+          headTitle: projectContent.title,
+        },
+      },
     },
   };
 }

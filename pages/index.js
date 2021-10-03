@@ -8,5 +8,8 @@ export default websitePageHOC(HomeScreen, {
       title: 'Daniela Caus',
       subtitle: 'Portfólio Alura',
     },
+    SEOProps: {
+      headTitle: 'Home',
+    },
   },
 });
